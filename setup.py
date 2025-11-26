@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
-from oddt import __version__ as VERSION
+
+VERSION="0.7"
 
 setup(name='oddt',
       version=VERSION,
