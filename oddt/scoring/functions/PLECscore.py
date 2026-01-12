@@ -98,7 +98,7 @@ class PLECscore(scorer):
                 kwargs['n_iter'] = 100
             model = SGDRegressor(**kwargs)
         elif version == 'nn':
-            model = MLPRegressor((200, 200, 200),
+            model = MLPRegressor(hidden_layer_sizes=(200, 200, 200),
                                  batch_size=10,
                                  random_state=0,
                                  verbose=0,

@@ -86,7 +86,7 @@ class nnscore(scorer):
         trained_nets = (
             Parallel(n_jobs=self.n_jobs, verbose=10, pre_dispatch='all')(
                 delayed(method_caller)(
-                    neuralnetwork((5,),
+                    neuralnetwork(hidden_layer_sizes=(5,),
                                   random_state=seeds[i],
                                   activation='logistic',
                                   solver='lbfgs',
