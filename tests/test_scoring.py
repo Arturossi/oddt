@@ -275,5 +275,5 @@ def test_model_train(model):
 
         preds = model.predict(mols)
         assert len(preds) == 10
-        assert preds.dtype == np.float
+        assert preds.dtype == float
         assert model.score(mols, preds) == 1.0
